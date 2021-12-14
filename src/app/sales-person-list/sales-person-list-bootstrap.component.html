@@ -16,7 +16,7 @@
             <td>{{tempSalesPerson.firstname}}</td>
             <td>{{tempSalesPerson.lastname}}</td>
             <td>{{tempSalesPerson.email}}</td>
-            <td>{{tempSalesPerson.salesVloume}}</td>
+            <td>{{tempSalesPerson.salesVloume | currency: 'USD'}}</td>
 
             <td>
                 <div *ngIf="tempSalesPerson.salesVloume >= 60000; else myElseBlock">Yes</div>
